@@ -1,0 +1,19 @@
+{
+  "status": "PASS_CPU_AND_PACKAGE_TESTS_ONLY",
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "torch": "2.15.0+cpu",
+  "transformers": "4.51.3",
+  "package_tests": 3,
+  "runtime_tests": {
+    "status": "PASS",
+    "tests": 4
+  },
+  "notebook_schema_checks": 10,
+  "report_render_test": "PASS_SYNTHETIC_FIXTURE_ONLY_NOT_DGX_RESULTS",
+  "not_tested": [
+    "B200 execution/VRAM fit",
+    "3B full-weight training",
+    "DGX quality and timing",
+    "TensorRT conversion/build/runtime API compatibility"
+  ]
+}

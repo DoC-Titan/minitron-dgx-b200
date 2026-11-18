@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+.env
+.env.*
+.secrets/
+.opencode/
+**/github-token
+**/run.local.json
+**/models/
+**/state/
+**/runs/
+**/*.safetensors
+**/*.engine
+# Bundled data/*.pt are intentional, verified inputs; do not blanket-ignore .pt.

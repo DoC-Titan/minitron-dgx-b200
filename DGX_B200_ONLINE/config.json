@@ -1,0 +1,23 @@
+{
+  "run_dir": "/home/jovyan/work/minitron_dgx/runs/b200_online_full_v1",
+  "teacher": "/home/jovyan/work/minitron_dgx/models/qwen2.5-3b-pinned",
+  "gpu_uuid": "GPU-93e0a29e-4deb-9c9d-637d-6f944839fd7e",
+  "teacher_revision": "3aab1f1954e9cc14eb9509a215f9e5ca08227a9b",
+  "seeds": [42, 123, 2026],
+  "structures": {"moderate": {"layers": 32, "ffn": 9600}, "strong": {"layers": 28, "ffn": 8192}},
+  "criteria": ["random", "magnitude", "sensitivity"],
+  "objectives": ["ce", "kl"],
+  "epochs": 10,
+  "batch_size": 1,
+  "accumulation": 8,
+  "learning_rate": 0.00001,
+  "weight_decay": 0.0,
+  "temperature": 2.0,
+  "checkpoint_updates": 192,
+  "cpu_threads": 4,
+  "benchmark_lengths": [32, 128, 512],
+  "benchmark_new_tokens": 16,
+  "warmups": 2,
+  "repeats": 5,
+  "benchmark_jobs": ["moderate_sensitivity_s42_kl", "strong_sensitivity_s42_kl"]
+}

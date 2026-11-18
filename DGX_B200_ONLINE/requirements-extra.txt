@@ -1,0 +1,9 @@
+# Keep the campus-provided Blackwell-compatible PyTorch installation.
+# The setup notebook verifies an actual CUDA operation; it does not replace torch.
+transformers==4.51.3
+accelerate>=1.2,<2
+safetensors>=0.5,<1
+numpy>=1.26,<3
+psutil>=6,<8
+matplotlib>=3.8,<4
+nbformat>=5.10,<6
